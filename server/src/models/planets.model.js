@@ -29,11 +29,11 @@ function loadPlanets() {
         reject(err);
       })
       .on("end", () => {
-        console.log(
-          habitablePlanets.map((planet) => {
-            return planet["kepler_name"];
-          })
-        );
+        // console.log(
+        //   habitablePlanets.map((planet) => {
+        //     return planet["kepler_name"];
+        //   })
+        // );
         // console.log(`${habitablePlanets.length} habitable planets found!`);
         resolve();
       });
@@ -42,7 +42,13 @@ function loadPlanets() {
   })
 
 }
+
+function getAllPlanets() {
+  return habitablePlanets
+}
+
+
   module.exports = {
     loadPlanets,
-    planets: habitablePlanets
-  }
+    getAllPlanets: getAllPlanets,
+  };
