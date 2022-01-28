@@ -5,8 +5,7 @@ const {loadPlanets} = require("./models/planets.model");
 const PORT = process.env.PORT || 5000;
 const mongoose = require("mongoose")
 
-const MONGO_URI =
-  "mongodb+srv://Indrajith:7HdCyR6bKjBNxZw6@hackrio-rev.350go.mongodb.net/NASA";
+const MONGO_URI = process.env.MONGO_URI;
 const server = http.createServer(app);
 
 mongoose.connection.once("open",()=>{
