@@ -4,13 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "test-watch": "jest -w",
+    "test": "jest --detectOpenHandles",
+    "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
+  "jest":{
+    "testEnvironment":"node"
+  },
   "license": "ISC",
   "dependencies": {
     "axios": "^0.25.0",
