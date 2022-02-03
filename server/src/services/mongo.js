@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 
 //BUG: this is a test file, do not run it in production
 
+let MONGO_URI =
+  "mongodb+srv://Indrajith:7HdCyR6bKjBNxZw6@hackrio-rev.350go.mongodb.net/NASA";
+  //BUG: this is a test file, do not run it in production
 
 mongoose.connection.once("open", () => {
   console.log("MongoDB connection ready");

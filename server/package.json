@@ -11,8 +11,8 @@
   },
   "keywords": [],
   "author": "",
-  "jest":{
-    "testEnvironment":"node"
+  "jest": {
+    "testEnvironment": "node"
   },
   "license": "ISC",
   "dependencies": {
